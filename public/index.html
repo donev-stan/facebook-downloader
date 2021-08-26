@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    <link rel="icon" href="./icon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Facebook Downloader</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark py-2">
+            <h1 class="text-center text-white">Facebook Downloader</h1>
+        </div>
+        
+        <div class="row text-center my-4">
+            <div class="col-12 mb-3">
+                <div class="container">
+
+                    <input type="text" class="form-control" id="video-url" width="500px">
+                </div>
+            </div>
+            
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit" id="download-btn">Download</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.1/download.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
