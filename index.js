@@ -6,6 +6,7 @@ let app = express();
 app.use(express.json());
 app.use(express.static("public"));
 
+const port = 5000;
 
 async function getLink(videoURL) {
     try {
@@ -30,4 +31,4 @@ app.get('/download', async function(req, res) {
     res.json(data);
 });
 
-app.listen(5000, () => console.log("Server is listening on port 5000..."));
+app.listen(process.env.PORT || 5000, () => console.log("Server is listening on port 5000..."));
